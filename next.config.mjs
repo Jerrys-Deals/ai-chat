@@ -56,7 +56,7 @@ if (mode !== "export") {
   nextConfig.headers = async () => {
     return [
       {
-        source: "*",
+        source: "/:path*",
         headers: CorsHeaders,
       },
     ];
